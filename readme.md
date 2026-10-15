@@ -37,11 +37,18 @@
 ## 架构
 
 ```
-fetch.go     goroutine 并发抓取（32 并发），原子写缓存
-classify.go  消费端语法路由 —— 核心域逻辑
-write.go     去重 + 尾换行
-stats.go     stats.json + history.jsonl
-main.go      编排 + 安全门禁
+cmd/hosts-rules/       入口 + 编排 + 安全门禁
+internal/pipeline/
+  fetch.go             goroutine 并发抓取（32 并发），原子写缓存
+  classify.go          消费端语法路由 —— 核心域逻辑
+  write.go             去重 + 尾换行 + 域名抽取
+  stats.go             stats.json + history.jsonl
+  io.go                文件读取 + 历史回读（门禁用）
+config/
+  links.txt            41 个基础源
+  links_full.txt       82 个完整源
+  diy.txt              手写规则（AGH 语法）
+docs/                  Hugo 状态面板 + ADR
 ```
 
 零第三方 Go 依赖，单二进制。
