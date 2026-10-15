@@ -2,6 +2,7 @@ package pipeline
 
 import (
 	"os"
+	"path/filepath"
 	"strings"
 )
 
@@ -22,8 +23,13 @@ func Dedupe(lines []string) []string {
 	return out
 }
 
-// WriteOutput dedupes and appends a trailing newline.
+// WriteOutput creates the parent directory, dedupes and appends a trailing newline.
 func WriteOutput(path string, lines []string) error {
+	if dir := filepath.Dir(path); dir != "" && dir != "." {
+		if err := os.MkdirAll(dir, 0o755); err != nil {
+			return err
+		}
+	}
 	lines = Dedupe(lines)
 	if len(lines) == 0 {
 		return os.WriteFile(path, nil, 0o644)
