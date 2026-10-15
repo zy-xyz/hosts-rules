@@ -26,13 +26,13 @@ jobs:
         run: go test ./...
 
       - name: build
-        run: go build -ldflags="-s -w" -o hosts-new ./cmd/hosts-new
+        run: go build -ldflags="-s -w" -o hosts-rules ./cmd/hosts-rules
 
       - name: run (base)
-        run: ./hosts-new
+        run: ./hosts-rules
 
       - name: run (full)
-        run: ./hosts-new --full
+        run: ./hosts-rules --full
 
       - name: publish release
         uses: softprops/action-gh-release@v2
@@ -49,7 +49,7 @@ jobs:
             dist/accelerate_full.txt
             dist/easylist_full.txt
             dist/adblock_full.txt
-            hosts-new
+            hosts-rules
 
       - name: commit stats
         run: |

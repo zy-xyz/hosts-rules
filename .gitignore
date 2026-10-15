@@ -1,8 +1,8 @@
 # build output —— 走 GitHub Release，不进 main
 /dist/
 # compiled binary
-/hosts-new
-/hosts-new.exe
+/hosts-rules
+/hosts-rules.exe
 # upstream download cache
 /cache/
 # hugo build

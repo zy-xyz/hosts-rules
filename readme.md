@@ -19,10 +19,10 @@
 
 `_full` 后缀为完整源集（82 源，base 为 41 源）。
 
-订阅地址：`https://github.com/zy-xyz/hosts-new/releases/latest/download/<文件名>`
+订阅地址：`https://github.com/zy-xyz/hosts-rules/releases/latest/download/<文件名>`
 
 可通过 `ghfast.top` 镜像加速：
-`https://ghfast.top/https://github.com/zy-xyz/hosts-new/releases/latest/download/easylist.txt`
+`https://ghfast.top/https://github.com/zy-xyz/hosts-rules/releases/latest/download/easylist.txt`
 
 ---
 

@@ -22,7 +22,7 @@
 
 ```
 hosts-new/
-├── go.mod                    # module github.com/zy-xyz/hosts-new
+├── go.mod                    # module github.com/zy-xyz/hosts-rules
 ├── main.go                   # 入口、--full flag、编排、门禁
 ├── fetch.go                  # goroutine 并发抓取
 ├── classify.go               # 消费端语法路由
@@ -51,7 +51,7 @@ hosts-new/
 - [ ] 删除旧 workflow：`git rm .github/workflows/daily-update*.yml`
 - [ ] 删除误提交图片：`git rm *.jpg *.png`
 - [ ] `git rm cache/ __pycache__/`（如有）
-- [ ] `go mod init github.com/zy-xyz/hosts-new`
+- [ ] `go mod init github.com/zy-xyz/hosts-rules`
 - [ ] 创建 `links.txt`（从旧 hosts.py links 数组提取 41 URL）和 `links_full.txt`（74 URL）
 - [ ] 保留 `diy.txt`
 - [ ] `.gitignore`：`cache/`、`*.txt`（输出产物不进 main，走 Release）

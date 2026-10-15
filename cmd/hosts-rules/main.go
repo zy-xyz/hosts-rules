@@ -1,4 +1,4 @@
-// Command hosts-new builds the three consumer rule files from upstream lists.
+// Command hosts-rules builds the three consumer rule files from upstream lists.
 //
 // Every rule is routed by what the consumer can actually parse, never by a
 // string feature of the rule itself. See docs/adr/0003.
@@ -11,7 +11,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/zy-xyz/hosts-new/internal/pipeline"
+	"github.com/zy-xyz/hosts-rules/internal/pipeline"
 )
 
 const workers = 32
