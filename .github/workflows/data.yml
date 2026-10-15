@@ -1,0 +1,60 @@
+name: data
+
+on:
+  schedule:
+    - cron: '0 16 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+
+      - name: test
+        run: go test ./...
+
+      - name: build
+        run: go build -ldflags="-s -w" -o hosts-new ./cmd/hosts-new
+
+      - name: run (base)
+        run: ./hosts-new
+
+      - name: run (full)
+        run: ./hosts-new --full
+
+      - name: publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: data-${{ github.run_number }}
+          name: data-${{ github.run_number }}
+          body: |
+            Automated rule build.
+            Sources: 41 (base) / 82 (full)
+          files: |
+            dist/accelerate.txt
+            dist/easylist.txt
+            dist/adblock.txt
+            dist/accelerate_full.txt
+            dist/easylist_full.txt
+            dist/adblock_full.txt
+            hosts-new
+
+      - name: commit stats
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/static/data
+          git diff --cached --quiet || git commit -m "data: build ${{ github.run_number }}"
+          git push

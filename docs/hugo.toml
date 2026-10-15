@@ -1,0 +1,4 @@
+baseURL = "https://zy-xyz.github.io/hosts-new/"
+languageCode = "zh-cn"
+title = "hosts-new"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]

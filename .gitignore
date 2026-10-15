@@ -1,0 +1,11 @@
+# build output —— 走 GitHub Release，不进 main
+/dist/
+# compiled binary
+/hosts-new
+/hosts-new.exe
+# upstream download cache
+/cache/
+# hugo build
+/docs/public/
+/docs/.hugo_build.lock
+*.tar.gz
