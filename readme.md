@@ -1,4 +1,4 @@
-# 🛡️ hosts-new
+# 🛡️ hosts-rules
 
 轻量级、可自定义的广告 / 跟踪 / 恶意域名屏蔽规则构建器。
 
@@ -28,7 +28,7 @@
 
 ## 状态面板
 
-构建统计与趋势图：https://zy-xyz.github.io/hosts-new/
+构建统计与趋势图：https://zy-xyz.github.io/hosts-rules/
 
 自动生成，无后端、无数据库。
 
@@ -80,9 +80,9 @@ AGH 修饰符白名单：`client` `denyallow` `dnstype` `dnsrewrite` `important`
 ## 本地运行
 
 ```bash
-go build -o hosts-new .
-./hosts-new          # base，41 源
-./hosts-new --full   # full，82 源
+go build -o hosts-rules ./cmd/hosts-rules
+./hosts-rules          # base，41 源
+./hosts-rules --full   # full，82 源
 go test ./...        # 路由逻辑测试
 ```
 
