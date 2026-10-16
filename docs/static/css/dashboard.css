@@ -1,0 +1,90 @@
+/* hosts-rules 构建状态面板 —— 适配 LoveIt 主题 */
+.hr-dash {
+  --hr-acc: #2d96bd;
+  --hr-easy: #2e9e5b;
+  --hr-ad: #8b5cf6;
+  --hr-dim: #a9a9b3;
+  --hr-hair: rgba(128, 128, 128, 0.22);
+  --hr-card: rgba(128, 128, 128, 0.06);
+}
+body[theme="dark"] .hr-dash {
+  --hr-acc: #6ea8ff;
+  --hr-easy: #4ade80;
+  --hr-ad: #c084fc;
+  --hr-dim: #5d5d5f;
+  --hr-hair: rgba(255, 255, 255, 0.12);
+  --hr-card: rgba(255, 255, 255, 0.05);
+}
+
+.hr-dash .sub {
+  color: var(--hr-dim);
+  font-size: 13px;
+  margin-bottom: 22px;
+}
+.hr-dash .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.hr-dash .card,
+.hr-dash .panel {
+  background: var(--hr-card);
+  border: 1px solid var(--hr-hair);
+  border-radius: 12px;
+}
+.hr-dash .card { padding: 16px 18px; }
+.hr-dash .card .k {
+  color: var(--hr-dim);
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.hr-dash .card .v {
+  font-size: 27px;
+  font-weight: 620;
+  margin-top: 6px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.01em;
+}
+.hr-dash .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 760px) { .hr-dash .grid { grid-template-columns: 1fr; } }
+.hr-dash .panel { padding: 18px; }
+.hr-dash .panel h2 {
+  font-size: 12.5px;
+  margin: 0 0 14px;
+  color: var(--hr-dim);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+}
+.hr-dash table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.hr-dash th, .hr-dash td {
+  text-align: left;
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--hr-hair);
+}
+.hr-dash th { color: var(--hr-dim); font-weight: 500; }
+.hr-dash tr:last-child td { border-bottom: 0; }
+.hr-dash td.n { text-align: right; font-variant-numeric: tabular-nums; }
+.hr-dash .url {
+  max-width: 420px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 12px;
+}
+.hr-dash .ok { color: var(--hr-easy); }
+.hr-dash .bad { color: #e5534b; }
+.hr-dash .fail {
+  font-family: ui-monospace, monospace;
+  font-size: 12px;
+  word-break: break-all;
+}
+.hr-dash .empty { color: var(--hr-dim); font-size: 13px; }
+.hr-dash canvas { max-width: 100%; }
