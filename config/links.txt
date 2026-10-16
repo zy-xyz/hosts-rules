@@ -37,5 +37,4 @@ https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
 https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
 https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu-strict.txt
 https://raw.githubusercontent.com/zsokami/ACL4SSR/main/hosts
-https://raw.githubusercontent.com/zy-xyz/hosts-new/refs/heads/main/diy.txt
 https://raw.hellogithub.com/hosts

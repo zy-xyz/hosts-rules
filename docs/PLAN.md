@@ -1,4 +1,7 @@
-# hosts-new 重写实施计划
+# hosts-rules 重写实施计划
+
+> **状态：已完成。** 本文件保留为历史实施记录（原计划针对 `hosts-new`，已归档；
+> 现项目为 `hosts-rules`）。文中 `hosts-new` 字样为当时的命名。
 
 ## 决策摘要
 
