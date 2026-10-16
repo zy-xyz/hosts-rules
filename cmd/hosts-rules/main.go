@@ -92,14 +92,20 @@ func main() {
 		}
 	}
 
-	files := map[string][]string{
-		"accelerate" + suffix + ".txt": acc,
-		"easylist" + suffix + ".txt":   easy,
-		"adblock" + suffix + ".txt":    ad,
+	stamp := time.Now()
+	files := []struct {
+		name  string
+		kind  string
+		lines []string
+	}{
+		{"accelerate" + suffix + ".txt", "accelerate", acc},
+		{"easylist" + suffix + ".txt", "easylist", easy},
+		{"adblock" + suffix + ".txt", "adblock", ad},
 	}
-	for name, lines := range files {
-		if err := pipeline.WriteOutput(filepath.Join(*outDir, name), lines); err != nil {
-			log.Fatalf("write %s: %v", name, err)
+	for _, f := range files {
+		banner := pipeline.Banner(f.kind, *full, len(f.lines), len(urls), stamp)
+		if err := pipeline.WriteOutput(filepath.Join(*outDir, f.name), banner, f.lines); err != nil {
+			log.Fatalf("write %s: %v", f.name, err)
 		}
 	}
 
