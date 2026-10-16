@@ -17,12 +17,25 @@
 | `easylist.txt` | **AdGuard Home** | DNS 级规则：`\|\|domain^`、`@@\|\|domain^`、`/regex/` + AGH 原生修饰符 |
 | `adblock.txt` | **uBlock Origin** | 全语法：浏览器专有修饰符、cosmetic 规则、通配符域名 |
 
-`_full` 后缀为完整源集（82 源，base 为 41 源）。
+`_full` 后缀为完整源集（82 源，base 为 41 源），例如 `easylist_full.txt`。
 
-订阅地址：`https://github.com/zy-xyz/hosts-rules/releases/latest/download/<文件名>`
+### 订阅地址
 
-可通过 `ghfast.top` 镜像加速：
-`https://ghfast.top/https://github.com/zy-xyz/hosts-rules/releases/latest/download/easylist.txt`
+源链（GitHub 直连）：
+
+| 文件 | 消费端 | 订阅链接 |
+|---|---|---|
+| `easylist.txt` | AdGuard Home | `https://github.com/zy-xyz/hosts-rules/releases/latest/download/easylist.txt` |
+| `adblock.txt` | uBlock Origin | `https://github.com/zy-xyz/hosts-rules/releases/latest/download/adblock.txt` |
+| `accelerate.txt` | /etc/hosts 加速 | `https://github.com/zy-xyz/hosts-rules/releases/latest/download/accelerate.txt` |
+
+加速链（`ghfast.top` 镜像，国内直连不稳时用）：
+
+| 文件 | 订阅链接 |
+|---|---|
+| `easylist.txt` | `https://ghfast.top/https://github.com/zy-xyz/hosts-rules/releases/latest/download/easylist.txt` |
+| `adblock.txt` | `https://ghfast.top/https://github.com/zy-xyz/hosts-rules/releases/latest/download/adblock.txt` |
+| `accelerate.txt` | `https://ghfast.top/https://github.com/zy-xyz/hosts-rules/releases/latest/download/accelerate.txt` |
 
 ---
 
