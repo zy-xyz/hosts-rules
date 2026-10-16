@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: data
@@ -41,7 +42,7 @@ jobs:
           name: data-${{ github.run_number }}
           body: |
             Automated rule build.
-            Sources: 41 (base) / 82 (full)
+            Sources: 40 (base) / 81 (full)
           files: |
             dist/accelerate.txt
             dist/easylist.txt
@@ -58,3 +59,14 @@ jobs:
           git add docs/static/data
           git diff --cached --quiet || git commit -m "data: build ${{ github.run_number }}"
           git push
+
+      # GITHUB_TOKEN 触发的 push 不会再触发其它 workflow（GitHub 防递归），
+      # 所以 stats 提交后必须显式 dispatch pages，否则统计页冻结在旧数据。
+      - name: trigger pages
+        run: |
+          curl -sS -X POST \
+            -H "Authorization: Bearer ${{ github.token }}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/pages.yml/dispatches" \
+            -d '{"ref":"main"}'
