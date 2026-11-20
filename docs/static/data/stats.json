@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-19T22:50:31Z",
-  "duration_s": 2.035271632,
+  "timestamp": "2026-11-20T22:26:48Z",
+  "duration_s": 2.6223625,
   "full": false,
   "total_sources": 40,
   "failed_sources": [
@@ -8,252 +8,252 @@
     "https://raw.githubusercontent.com/geoisam/FuckScripts/main/adfuck.txt"
   ],
   "buckets": {
-    "accelerate": 64564,
-    "easylist": 116901,
-    "adblock": 41443
+    "accelerate": 64566,
+    "easylist": 117796,
+    "adblock": 41453
   },
-  "raw_lines": 282793,
+  "raw_lines": 283720,
   "source_contrib": [
     {
       "url": "https://anti-ad.net/easylist.txt",
-      "bytes": 2090010,
-      "domains": 95663,
-      "duration_s": 0.359481644
+      "bytes": 2109963,
+      "domains": 96572,
+      "duration_s": 0.166678285
     },
     {
       "url": "https://github.com/Potterli20/file/releases/download/github-hosts/gfw-hosts.txt",
       "bytes": 3221988,
       "domains": 23335,
-      "duration_s": 0.345530502
+      "duration_s": 0.466038468
     },
     {
       "url": "https://raw.githubusercontent.com/lingeringsound/10007/main/all",
       "bytes": 500821,
       "domains": 17279,
-      "duration_s": 0.153692325
+      "duration_s": 0.384177841
     },
     {
       "url": "https://filters.adtidy.org/windows/filters/224_optimized.txt",
-      "bytes": 702063,
-      "domains": 10342,
-      "duration_s": 1.654633874
+      "bytes": 702932,
+      "domains": 10351,
+      "duration_s": 2.071158279
     },
     {
       "url": "https://easylist-downloads.adblockplus.org/easylistchina.txt",
-      "bytes": 499845,
-      "domains": 9338,
-      "duration_s": 0.206156131
+      "bytes": 499993,
+      "domains": 9346,
+      "duration_s": 0.177924568
     },
     {
       "url": "https://raw.githubusercontent.com/8680/GOODBYEADS/master/data/rules/allow.txt",
       "bytes": 892011,
       "domains": 8457,
-      "duration_s": 0.155834713
+      "duration_s": 0.406795977
     },
     {
       "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/refs/heads/master/BaseFilter/sections/antiadblock.txt",
-      "bytes": 1116882,
+      "bytes": 1116883,
       "domains": 5949,
-      "duration_s": 0.165153016
+      "duration_s": 0.345855309
     },
     {
       "url": "https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt",
-      "bytes": 129952,
+      "bytes": 129978,
       "domains": 4873,
-      "duration_s": 0.165147899
+      "duration_s": 0.392391773
     },
     {
       "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/refs/heads/master/BaseFilter/sections/allowlist_stealth.txt",
       "bytes": 211413,
       "domains": 3362,
-      "duration_s": 0.120359717
+      "duration_s": 0.268278954
     },
     {
       "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/refs/heads/master/BaseFilter/sections/allowlist.txt",
       "bytes": 330024,
       "domains": 2944,
-      "duration_s": 0.109591946
+      "duration_s": 0.329142635
     },
     {
       "url": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
       "bytes": 72758,
       "domains": 2493,
-      "duration_s": 0.145184134
+      "duration_s": 0.1688248
     },
     {
       "url": "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts",
       "bytes": 49407,
       "domains": 1646,
-      "duration_s": 0.04315813
+      "duration_s": 0.046912522
     },
     {
       "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/refs/heads/master/BaseFilter/sections/adservers.txt",
-      "bytes": 38423,
-      "domains": 1374,
-      "duration_s": 0.110921486
+      "bytes": 38498,
+      "domains": 1377,
+      "duration_s": 0.267414293
     },
     {
       "url": "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt",
       "bytes": 23792,
       "domains": 985,
-      "duration_s": 0.032354998
+      "duration_s": 0.290473669
     },
     {
       "url": "https://github.com/Potterli20/file/releases/download/github-hosts/Accelerate-Hosts.txt",
       "bytes": 100969,
       "domains": 495,
-      "duration_s": 0.308510008
+      "duration_s": 0.329474417
     },
     {
       "url": "https://raw.githubusercontent.com/zsokami/ACL4SSR/main/hosts",
       "bytes": 12891,
       "domains": 435,
-      "duration_s": 0.139495661
+      "duration_s": 0.365947215
     },
     {
       "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/refs/heads/master/ChineseFilter/sections/antiadblock.txt",
-      "bytes": 42851,
-      "domains": 365,
-      "duration_s": 0.157408623
+      "bytes": 43362,
+      "domains": 368,
+      "duration_s": 0.326376507
     },
     {
       "url": "https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt",
       "bytes": 28271,
       "domains": 270,
-      "duration_s": 0.096752712
+      "duration_s": 0.260775865
     },
     {
       "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/refs/heads/master/ChineseFilter/sections/adservers.txt",
       "bytes": 6608,
       "domains": 243,
-      "duration_s": 0.076846313
+      "duration_s": 0.361000299
     },
     {
       "url": "https://perflyst.github.io/PiHoleBlocklist/SmartTV-AGH.txt",
       "bytes": 10987,
       "domains": 209,
-      "duration_s": 0.091935843
+      "duration_s": 0.115146451
     },
     {
       "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/refs/heads/master/ChineseFilter/sections/allowlist.txt",
       "bytes": 17162,
       "domains": 208,
-      "duration_s": 0.10433694
+      "duration_s": 0.320566407
     },
     {
       "url": "https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt",
       "bytes": 39690,
       "domains": 139,
-      "duration_s": 0.089975293
+      "duration_s": 0.34999412
     },
     {
       "url": "https://raw.githubusercontent.com/JohyC/Hosts/refs/heads/main/hosts.txt",
       "bytes": 26827,
       "domains": 119,
-      "duration_s": 0.12135241
+      "duration_s": 0.413107783
     },
     {
       "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/refs/heads/master/BaseFilter/sections/general_url.txt",
       "bytes": 25124,
       "domains": 107,
-      "duration_s": 0.141819666
+      "duration_s": 0.346323553
     },
     {
       "url": "https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt",
       "bytes": 6533,
       "domains": 95,
-      "duration_s": 0.072433259
+      "duration_s": 0.303279562
     },
     {
       "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/refs/heads/master/BaseFilter/sections/general_elemhide.txt",
       "bytes": 14333,
       "domains": 82,
-      "duration_s": 0.091287637
+      "duration_s": 0.334002495
     },
     {
       "url": "https://raw.githubusercontent.com/Clov614/SteamHostSync/main/Hosts",
-      "bytes": 3888,
+      "bytes": 3886,
       "domains": 79,
-      "duration_s": 0.152880027
+      "duration_s": 0.334678303
     },
     {
       "url": "https://raw.githubusercontent.com/geoisam/FuckScripts/main/adsfuck.txt",
       "bytes": 7570,
       "domains": 61,
-      "duration_s": 0.113732939
+      "duration_s": 0.352922926
     },
     {
       "url": "https://raw.githubusercontent.com/runningcheese/RunningCheese-Firefox/master/Restore/Adblock_Watermark.txt",
       "bytes": 3805,
       "domains": 47,
-      "duration_s": 0.086835536
+      "duration_s": 0.325614612
     },
     {
       "url": "https://raw.hellogithub.com/hosts",
       "bytes": 2476,
       "domains": 43,
-      "duration_s": 0.787784444
-    },
-    {
-      "url": "https://raw.githubusercontent.com/jianboy/github-host/master/hosts",
-      "bytes": 1796,
-      "domains": 42,
-      "duration_s": 0.158477188
+      "duration_s": 0.936811988
     },
     {
       "url": "https://raw.githubusercontent.com/ineo6/hosts/refs/heads/master/hosts",
       "bytes": 2126,
       "domains": 38,
-      "duration_s": 0.108745288
+      "duration_s": 0.350583217
     },
     {
       "url": "https://github.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/raw/refs/heads/main/list.txt",
       "bytes": 230814,
       "domains": 32,
-      "duration_s": 0.32447597
+      "duration_s": 0.591333723
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jianboy/github-host/master/hosts",
+      "bytes": 1330,
+      "domains": 29,
+      "duration_s": 0.30347015
     },
     {
       "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/refs/heads/master/ChineseFilter/sections/general_url.txt",
       "bytes": 1485,
       "domains": 12,
-      "duration_s": 0.122928643
+      "duration_s": 0.372244294
     },
     {
       "url": "https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu-strict.txt",
       "bytes": 1186,
       "domains": 11,
-      "duration_s": 0.140887893
+      "duration_s": 0.346862695
     },
     {
       "url": "https://raw.githubusercontent.com/entr0pia/fcm-hosts/fcm/fcm-hosts",
       "bytes": 443,
       "domains": 11,
-      "duration_s": 0.15748173
+      "duration_s": 0.346165597
     },
     {
       "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/refs/heads/master/ChineseFilter/sections/general_elemhide.txt",
       "bytes": 808,
       "domains": 10,
-      "duration_s": 0.113771997
+      "duration_s": 0.359911872
     },
     {
       "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/refs/heads/master/BaseFilter/sections/banner_sizes.txt",
       "bytes": 1254,
       "domains": 5,
-      "duration_s": 0.098035853
+      "duration_s": 0.354700262
     },
     {
       "url": "https://github-hosts.tinsfox.com/hosts",
       "bytes": 0,
       "domains": 0,
-      "duration_s": 0.065241919,
+      "duration_s": 0.052225912,
       "error": "Get \"https://github-hosts.tinsfox.com/hosts\": dial tcp: lookup github-hosts.tinsfox.com on 127.0.0.53:53: no such host"
     },
     {
       "url": "https://raw.githubusercontent.com/geoisam/FuckScripts/main/adfuck.txt",
       "bytes": 0,
       "domains": 0,
-      "duration_s": 0.108680653,
+      "duration_s": 0.350479536,
       "error": "HTTP 404"
     }
   ]
